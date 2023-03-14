@@ -1,0 +1,480 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: 33.3333%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
+}
+.pull-right {
+    float: right !important;    
+}
+#main {
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46.4px;
+    background-color: #000;
+    z-index: 1;
+}
+
+#nav {
+    display:inline-block;
+}
+#nav, .subnav {
+    list-style-type: none;
+}
+#nav > li {
+    display: inline-block;
+    
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 46.4px;
+    padding:0px 24px;
+    font-size: 15px;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #fff;
+    top: 100%;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.3) ;
+}
+
+#nav .subnav a {
+    line-height: 38.4px;
+    padding: 0px 16px;
+}
+
+#nav .arrown-down {
+    font-size: 13px;
+}
+
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+    line-height: 46.4px;
+    padding: 0px 24px;
+}
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+#header .menu-icon,
+#header .ti-search {
+    color: #fff;
+    font-size: 14px;
+}
+#slider {
+    position: relative;
+    margin-top: 46.4px;
+    padding-top: 50%;
+    background: url('../img/slider1.jpg') top center / cover no-repeat;
+    height: 560px;
+}
+#slider .text-content {
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#slider .text-sub-heading {
+    font-size: 15px;
+    margin-top: 25px;
+    font-weight: bolder;
+    text-shadow: 0 0 10px black;
+}
+
+#content .section-content {
+    width: 800px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+
+#content .section-sub-heading{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.5;
+
+}
+
+#content .section-about {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .member-list {
+    margin-top: 32px;
+}
+#content .member-name {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+#content .member-img {
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+#content .section-tour {
+    min-height: 200px;
+    background-color: #000;
+}
+
+#content .ticket-list{
+    margin-top: 25px;
+    background-color: #fff;
+}
+
+#content .ticket-list li{
+    color: #757575;
+    font-size:15px ;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+}
+
+.ticket-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 7px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity{
+    background-color: #000;
+    color: #fff;
+    float: right;
+    border-radius: 50%;
+    padding: 3px 8px;
+    margin-top: -3px;
+    font-size: 15px;
+}
+
+#content .place-list {
+    margin-top: 16px;
+}
+
+#content .place-img:hover {
+    opacity: 0.6;
+}
+#content .place-img {
+    width: 100%;
+    display: block;
+}
+
+#content .place-body {
+    background-color: #fff;
+    padding: 16px;
+}
+
+#content .place-name {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+#content .place-time {
+    margin-top: 15px;
+    font-size: 15px;
+    color: #757575;
+}
+
+#content .place-des {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.btn {
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 11px 16px;
+    border: none;
+    display: inline-block;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-info a {
+    color: #0000EE;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.section-map img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+#footer {
+    margin: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list{
+    font-size: 24px;
+}
+
+#footer .copy-right a:hover,
+#footer .social-list a:hover {
+    opacity: 0.5;
+}
+
+#footer .social-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+#footer .copy-right{
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 25px;
+}
+
+#footer .copy-right a{
+    color: rgba(0, 0, 0, 0.6)
+}
+
+/* section modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+
+}
+.modal-container {
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+    background-color: #fff;
+    position: relative;
+    animation: FideIn ease 0.5s;
+}
+
+.modal-header {
+    background-color:#009688 ;
+    color: #fff;
+    font-size: 30px;
+    padding:42px 0;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.modal-close:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+.modal-close {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+    font-size: 18px;
+    padding: 10px 16px;
+}
+
+.modal-body {
+    padding: 16px;
+}
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.modal-input {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 15px;
+    padding: 11px;
+    border: 1px solid #ccc;
+
+}
+.modal-btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.modal-btn {
+    background-color: #009688;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    width: 100%;
+    padding: 18px;
+    border: none;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
+.modal-footer {
+    float: right;
+    font-size: 15px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+@keyframes FideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
